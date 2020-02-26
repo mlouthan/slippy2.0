@@ -65,8 +65,7 @@ public class TextAnimator {
                     boolean slippyPaused = mediaPlayer.getStatus() == MediaPlayer.Status.PAUSED;
 
                     if (!slippyPaused &&
-                            mediaPlayer.getCurrentTime().toMillis() >=
-                                    mediaPlayer.getTotalDuration().toMillis() - videoConfig.getVideoOutroMillis()) {
+                            mediaPlayer.getCurrentTime().toMillis() >= videoConfig.getVideoOutroMillis()) {
                         mediaPlayer.pause();
                     }
 

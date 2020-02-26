@@ -55,7 +55,7 @@ public class TextVideoApp extends Application {
 
     private MenuBar createMenuBar(final List<TextVideo> textVideos) {
         MenuBar menuBar = new MenuBar();
-        menuBar.setUseSystemMenuBar(true);
+        //menuBar.setUseSystemMenuBar(true);
         Menu videoMenu = new Menu("Video");
 
         ToggleGroup framerateGroup = new ToggleGroup();
@@ -68,6 +68,7 @@ public class TextVideoApp extends Application {
             boolean isSelected = true;
             for (TextVideo textVideo : textVideos) {
                 Menu menu = new Menu(textVideo.getVideoName());
+                menu.show();
                 createFramerateMenu(textVideo, framerateGroup, menu, isSelected);
                 videoMenu.getItems().add(menu);
                 isSelected = false;

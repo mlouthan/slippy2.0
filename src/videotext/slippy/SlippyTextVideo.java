@@ -10,6 +10,9 @@ import java.util.List;
 
 public class SlippyTextVideo extends StarFoxVideoTextBase {
 
+    //private static final String SLIPPY_VIDEO_30_FPS = "resources/Slippy_Blank_30fps.mp4";
+    //private static final String SLIPPY_VIDEO_60_FPS = "resources/Slippy_Blank_60fps.mp4";
+
     private static final String SLIPPY_VIDEO_30_FPS = "resources/Slippy_Blank_30fps.mp4";
     private static final String SLIPPY_VIDEO_60_FPS = "resources/Slippy_Blank_60fps.mp4";
 
